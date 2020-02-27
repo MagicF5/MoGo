@@ -1,3 +1,16 @@
+@import "helpers/_variables";
+@import "helpers/_layout";
+
+//variables
+
+$Montserat-font: 'Montserrat';
+$Kaushan-font: 'Kaushan Script';
+$Roboto-font: 'Roboto';
+$font-col-white: #ffffff;
+$font-col-black: #333333;
+$font-col-grey:  #999999;
+$before-col: #f38181;
+
 *{
     margin: 0;
     padding: 0;
@@ -297,3 +310,72 @@
         }
     }
 }
+
+
+// What-we-do
+
+.what-we-do {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 90px 0;
+}
+
+.about-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.about-promo {
+    display: flex;
+    justify-content: space-between;
+}
+
+.promo-block {
+    position: relative;
+    width: 32%;
+    background-color: #95e1d3;
+
+    &:hover &__img {
+        transform: translate3d(-10px, -10px, 0);
+    }
+
+    &:hover &__gradient {
+        transform: translate3d(-10px, -10px, 0);
+        opacity: 1;
+    }
+
+    &__img {
+        width: 100%;
+        transition: all 0.2s ease-in-out;
+    }
+
+    &__gradient {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+        opacity: 0;
+        transition: all 0.2s ease-in-out;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+
+        &_text {
+            color: $font-col-white;
+            font-family: $Montserat-font;
+            font-size: 18px;
+            font-weight: 700;
+            text-transform: uppercase;
+            padding-top: 10px;
+        }
+    }
+}
+

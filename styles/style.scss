@@ -267,7 +267,7 @@ $before-col: #f38181;
         padding-top: 40px;
 
         @media (max-width: 992px) {
-            padding-top: 20px;
+            padding: 20px 0;
             font-size: 70px;
             line-height: 90px;
         }
@@ -275,6 +275,7 @@ $before-col: #f38181;
         @media (max-width: 576px) {
             font-size: 40px;
             line-height: 50px;
+            padding: 30px 0 10px 0;
         }
         
         &::after{
@@ -291,7 +292,7 @@ $before-col: #f38181;
             }
 
             @media (max-width: 576px){
-                margin: 40px auto;
+                margin: 30px auto;
             }
         }
     }
@@ -323,9 +324,9 @@ $before-col: #f38181;
 }
 
 
-// What-we-do
+// Story-about-us
 
-.what-we-do {
+.story-about-us {
     padding: 90px 0;
 
     @media (max-width: 767px){
@@ -582,4 +583,24 @@ $before-col: #f38181;
             right: -55px;
         }
     }
+}
+
+// What we do 
+.what-we-do {
+    padding: 90px 0;
+
+    @media (max-width: 767px){
+        padding: 40px 0;
+    }
+
+    @media (max-width: 576px) {
+        // height: 100vh;
+    }
+}
+
+.offer {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }

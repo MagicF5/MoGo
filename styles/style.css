@@ -252,13 +252,14 @@
     padding-top: 40px; }
     @media (max-width: 992px) {
       .intro-block__text {
-        padding-top: 20px;
+        padding: 20px 0;
         font-size: 70px;
         line-height: 90px; } }
     @media (max-width: 576px) {
       .intro-block__text {
         font-size: 40px;
-        line-height: 50px; } }
+        line-height: 50px;
+        padding: 30px 0 10px 0; } }
     .intro-block__text::after {
       content: "";
       display: block;
@@ -272,7 +273,7 @@
           margin: 15px auto; } }
       @media (max-width: 576px) {
         .intro-block__text::after {
-          margin: 40px auto; } }
+          margin: 30px auto; } }
   .intro-block__button {
     display: flex;
     justify-content: center;
@@ -293,13 +294,13 @@
       font-weight: 700;
       text-transform: uppercase; }
 
-.what-we-do {
+.story-about-us {
   padding: 90px 0; }
   @media (max-width: 767px) {
-    .what-we-do {
+    .story-about-us {
       padding: 40px 0; } }
   @media (max-width: 576px) {
-    .what-we-do {
+    .story-about-us {
       height: 100vh; } }
 
 .about-us {
@@ -479,5 +480,17 @@
       .img-block__phone {
         bottom: -25px;
         right: -55px; } }
+
+.what-we-do {
+  padding: 90px 0; }
+  @media (max-width: 767px) {
+    .what-we-do {
+      padding: 40px 0; } }
+
+.offer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
 
 /*# sourceMappingURL=style.css.map */

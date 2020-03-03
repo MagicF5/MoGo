@@ -451,15 +451,13 @@
 
 .unique-design {
   width: 100%;
-  height: 100vh;
   background: url("../images/Layer_45.png") center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 100px;
-  margin-bottom: 20px; }
+  padding-top: 100px; }
   .unique-design__text {
     display: flex;
     flex-direction: column;

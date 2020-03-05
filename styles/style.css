@@ -2,7 +2,8 @@
   color: #333333;
   font-family: "Kaushan Script";
   font-size: 24px;
-  font-weight: 400; }
+  font-weight: 400;
+  z-index: 80; }
 
 .section-title__montserat {
   color: #333333;
@@ -454,13 +455,16 @@
 
 .unique-design {
   width: 100%;
-  background: url("../images/Layer_45.png") center no-repeat;
+  background: url("../images/imageedit_1_5055957645.png") center no-repeat;
   background-size: cover;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
-  padding-top: 100px; }
+  padding-top: 90px; }
+  @media (max-width: 767px) {
+    .unique-design {
+      padding-top: 40px; } }
   .unique-design__text {
     display: flex;
     flex-direction: column;
@@ -632,10 +636,10 @@
       margin-right: 10px; }
 
 .who-we-are {
-  padding: 90px 0; }
+  padding-top: 90px; }
   @media (max-width: 767px) {
     .who-we-are {
-      padding: 40px 0; } }
+      padding-top: 40px; } }
 
 .our-team {
   display: flex;
@@ -646,11 +650,20 @@
 .team-box {
   display: flex;
   justify-content: space-between; }
+  @media (max-width: 767px) {
+    .team-box {
+      flex-direction: column; } }
 
 .employee {
   display: flex;
   flex-direction: column;
   width: 32%; }
+  @media (max-width: 767px) {
+    .employee {
+      width: 100%;
+      margin-bottom: 30px; }
+      .employee:last-child {
+        margin-bottom: 0; } }
   .employee__icon {
     position: relative;
     background-color: #95e1d3;
@@ -722,5 +735,111 @@
   .barbershop-icon__img {
     width: 100%;
     margin: 0 auto; }
+
+.our-work {
+  padding: 90px 0;
+  display: flex;
+  flex-direction: column; }
+  @media (max-width: 767px) {
+    .our-work {
+      padding: 40px 0; } }
+  .our-work__title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+  .our-work__coments {
+    padding-top: 100px; }
+    @media (max-width: 767px) {
+      .our-work__coments {
+        padding-top: 40px; } }
+
+.some-design {
+  display: flex; }
+  .some-design__col {
+    display: flex;
+    flex-direction: column;
+    width: 100%; }
+  .some-design__box {
+    position: relative; }
+    .some-design__box:hover .some-design__section {
+      opacity: 1; }
+  .some-design__img {
+    width: 100%; }
+  .some-design__section {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    opacity: 0;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    justify-content: center; }
+    @media (max-width: 767px) {
+      .some-design__section {
+        display: none; } }
+
+.text-mont14px_design {
+  padding: 20px 0 10px 0; }
+
+.what-people-say {
+  width: 100%;
+  background: url("../images/imageedit_1_5622488734.png") center no-repeat;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  padding: 90px 0;
+  opacity: 0.9; }
+  @media (max-width: 767px) {
+    .what-people-say {
+      padding-top: 40px; } }
+  .what-people-say__title-text {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; }
+
+.clients {
+  display: flex; }
+  @media (max-width: 767px) {
+    .clients {
+      flex-direction: column; } }
+  .clients__col {
+    display: flex;
+    flex-direction: column; }
+  .clients__box {
+    display: flex;
+    margin: 30px 15px; }
+    @media (max-width: 767px) {
+      .clients__box {
+        margin: 30px 0; } }
+  .clients__text-box {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    text-align: left;
+    padding-left: 30px; }
+    @media (max-width: 767px) {
+      .clients__text-box {
+        padding-left: 15px; } }
+
+.text-roboto15px_clients {
+  padding: 15px 0 20px 0;
+  color: #333333;
+  font-style: italic; }
+  .text-roboto15px_clients::after {
+    content: "";
+    display: block;
+    margin-top: 20px;
+    width: 20%;
+    height: 3px;
+    background-color: #f38181; }
 
 /*# sourceMappingURL=style.css.map */

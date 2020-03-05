@@ -37,7 +37,8 @@
   font-size: 14px;
   font-weight: 400;
   text-transform: uppercase;
-  transition: all 0.3s ease-in-out; }
+  transition: all 0.3s ease-in-out;
+  font-weight: bold; }
   @media (max-width: 576px) {
     .text-mont14px {
       font-size: 9px; } }
@@ -629,5 +630,97 @@
       height: 3px;
       background-color: #f38181;
       margin-right: 10px; }
+
+.who-we-are {
+  padding: 90px 0; }
+  @media (max-width: 767px) {
+    .who-we-are {
+      padding: 40px 0; } }
+
+.our-team {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center; }
+
+.team-box {
+  display: flex;
+  justify-content: space-between; }
+
+.employee {
+  display: flex;
+  flex-direction: column;
+  width: 32%; }
+  .employee__icon {
+    position: relative;
+    background-color: #95e1d3;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer; }
+    .employee__icon:hover .employee__img {
+      transform: translate3d(-10px, -10px, 0); }
+    .employee__icon:hover .employee__gradient {
+      transform: translate3d(-10px, -10px, 0);
+      opacity: 1; }
+  .employee__img {
+    width: 100%;
+    transition: all 0.2s ease-in-out; }
+  .employee__gradient {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(to top, rgba(252, 227, 138, 0.9) 0%, rgba(243, 129, 129, 0.9) 100%);
+    opacity: 0;
+    transition: all 0.2s ease-in-out;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .employee__social {
+    width: 56px;
+    height: 56px;
+    background-color: #fce38a;
+    border-right: 1px solid #f38181;
+    transition: all 0.2s ease-in-out; }
+    .employee__social:last-child {
+      border-right: 0px; }
+    .employee__social:hover {
+      background-color: #f38181; }
+    .employee__social:hover .fa-facebook-f {
+      color: #ffffff; }
+    .employee__social:hover .fa-twitter {
+      color: #ffffff; }
+    .employee__social:hover .fa-pinterest-p {
+      color: #ffffff; }
+    .employee__social:hover .fa-instagram {
+      color: #ffffff; }
+
+.fa-facebook-f,
+.fa-twitter,
+.fa-pinterest-p,
+.fa-instagram {
+  font-size: 30px;
+  line-height: 56px;
+  color: #f38181;
+  transition: all 0.2s ease-in-out; }
+
+.text-mont14px_emploee {
+  padding: 30px 0 10px 0; }
+
+.text-roboto15px_emploee {
+  font-style: italic; }
+
+.barbershop-icon {
+  background-color: #f8f8f8;
+  padding: 50px 0;
+  margin-top: 100px; }
+  @media (max-width: 767px) {
+    .barbershop-icon {
+      padding: 20px 0;
+      margin-top: 40px; } }
+  .barbershop-icon__img {
+    width: 100%;
+    margin: 0 auto; }
 
 /*# sourceMappingURL=style.css.map */

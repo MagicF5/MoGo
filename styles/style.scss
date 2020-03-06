@@ -155,7 +155,7 @@ $before-col: #f38181;
         height: 100%;
         padding: 300px 25px 0 0;
         opacity: 0;
-        transition: all  0.4s ease-in-out;
+        transition: all  0.3s ease-in-out;
         background-color: #212121;
     }  
 
@@ -1276,6 +1276,11 @@ $before-col: #f38181;
         color: #95e1d3;
         font-size: 16px;
         margin-left: 10px;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            color: $before-col;
+        }
     }
 }
 
@@ -1289,6 +1294,7 @@ input {
     }
 
     &[type=submit] {
+        cursor: pointer;
         width: 150px;
         height: 40px;
         background-color: #95e1d3;
@@ -1298,6 +1304,11 @@ input {
         font-weight: 700;
         text-transform: uppercase;
         color: $font-col-white;
+        transition: all 0.3s ease-in-out;
+
+        &:hover {
+            background-color: $before-col;
+        }
     }
 }
 

@@ -164,7 +164,7 @@
       height: 100%;
       padding: 300px 25px 0 0;
       opacity: 0;
-      transition: all  0.4s ease-in-out;
+      transition: all  0.3s ease-in-out;
       background-color: #212121; } }
   .navigation_mobile {
     position: fixed;
@@ -982,7 +982,10 @@
   .footer-mogo__soc {
     color: #95e1d3;
     font-size: 16px;
-    margin-left: 10px; }
+    margin-left: 10px;
+    transition: all 0.3s ease-in-out; }
+    .footer-mogo__soc:hover {
+      color: #f38181; }
 
 input[type=email] {
   width: 200px;
@@ -991,6 +994,7 @@ input[type=email] {
   background-color: #ffffff;
   padding: 13px; }
 input[type=submit] {
+  cursor: pointer;
   width: 150px;
   height: 40px;
   background-color: #95e1d3;
@@ -999,7 +1003,10 @@ input[type=submit] {
   font-size: 14px;
   font-weight: 700;
   text-transform: uppercase;
-  color: #ffffff; }
+  color: #ffffff;
+  transition: all 0.3s ease-in-out; }
+  input[type=submit]:hover {
+    background-color: #f38181; }
 
 .footer-blog {
   display: flex;

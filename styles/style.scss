@@ -1088,3 +1088,156 @@ $before-col: #f38181;
     }
 }
 
+
+
+//  Latest blog
+
+.latest-blog {
+    padding: 90px;
+
+    @media (max-width: 767px){
+        padding: 40px;
+    }
+
+    @media (max-width: 576px) {
+        // height: 100vh;
+    }
+}
+
+.our-stories {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.blog {
+    display: flex;
+    justify-content: space-between;
+
+    @media (max-width: 767px){
+        flex-direction: column;
+    }
+
+    &__box {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        text-align: left;
+        width: 32%;
+
+        @media (max-width: 767px){
+            width: 100%;
+            max-width: 390px;
+            margin-bottom: 15px;
+
+            &:last-child {
+                margin-bottom: 0;
+            }
+        }
+    }
+
+    &__header {
+        position: relative;
+    }
+
+    &__img {
+        width: 100%;
+    }
+
+    &__data {
+        position: absolute;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        left: -10px;
+        bottom: 10px;
+        width: 60px;
+        height: 70px;
+        background-color: #95e1d3;
+
+        &_t1 {
+            color: $font-col-white;
+            font-family: $Montserat-font;
+            font-size: 30px;
+            font-weight: 700;
+            text-transform: uppercase;
+        }
+
+        &_t2 {
+            font-family: $Roboto-font;
+            color: $font-col-white;
+            font-size: 15px;
+            font-weight: 300;
+            font-style: italic;
+        }
+    }
+
+    &__counter {
+        display: flex;
+    }
+
+    .blog__seen,
+    .blog__coment {
+        text-decoration: none;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+
+    .blog__seen {
+        margin-right: 20px;
+    }
+}
+
+.text-mont14px {
+
+    &_blog {
+        padding: 20px 0;
+    }
+}
+
+.text-roboto15px {
+    
+    &_blog {
+        width: 100%;
+        position: relative;
+        padding-bottom: 40px;
+        &::after{
+            content: "";
+            display: block;
+            position: absolute;
+            bottom: 25%;
+            width: 100%;
+            height: 1px;
+            background-color: #e5e5e5;
+            transition: all 0.6s ease-in-out;
+
+            // @media (max-width: 767px){
+            //     display: none;
+            // }
+        }
+    }
+
+    &_blog-counter {
+        margin-left: 5px;
+    }
+
+}
+
+// Open map
+
+.open-map {
+    width: 100%;
+    background: url("../images/Layer_59.png") center no-repeat;
+    background-size: cover;
+    position: relative;
+    padding-top: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
